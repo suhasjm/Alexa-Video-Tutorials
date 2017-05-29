@@ -3,7 +3,7 @@ var Alexa = require('alexa-sdk');
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
 
-    alexa.dynamoDBTableName = 'sampleLangaugeTable'; // creates new table for session.attributes
+    alexa.dynamoDBTableName = 'sampleLanguageTable'; // creates new table for session.attributes
 
     alexa.registerHandlers(handlers);
     alexa.execute();
